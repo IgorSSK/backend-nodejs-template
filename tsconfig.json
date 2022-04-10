@@ -1,0 +1,44 @@
+/* Visit https://aka.ms/tsconfig.json to read more about this file */
+{
+  "compilerOptions": {
+    "incremental": true,
+    "target": "ES2022",
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true,
+    "module": "commonjs",
+    "moduleResolution": "node",
+    "baseUrl": "./src",
+    "paths": {
+      "@application/*": [
+        "application/*"
+      ],
+      "@domain/*": [
+        "domain/*"
+      ],
+      "@infrastructure/*": [
+        "infrastructure/*"
+      ],
+      "@main/*": [
+        "main/*"
+      ],
+      "@common/*": [
+        "common/*"
+      ],
+    },
+    "rootDirs": [
+      "./src",
+      "./tests"
+    ],
+    "outDir": "./dist",
+    "removeComments": true,
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true,
+    "strict": true,
+    "noImplicitAny": true,
+    "skipLibCheck": true
+  },
+  "include": [
+    "src",
+    "tests"
+  ]
+}
